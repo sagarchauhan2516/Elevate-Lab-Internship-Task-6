@@ -1,0 +1,51 @@
+Task 6 : Create a Strong Password and Evaluate Its Strength.
+Objective: Understand what makes a password strong and test it against password strength tools.
+Tools: Online free password strength checkers (e.g., passwordmeter.com).
+Deliverables: Report showing password strength results and explanation.
+
+
+Password Strength Analysis Report
+
+1. Password Test Results:
+
+| Password Used         | Complexity Type     | Score (e.g., %) | Estimated Crack Time | Key Feedback from Tool (e.g., "Add symbols") |
+|-----------------------|---------------------|-----------------|----------------------|---------------------------------------------|
+| `password123`         | Very Weak           | 20%     |  < 1 second          | Too common, too short, lacks diversity      |
+| `MyPassword`          | Weak                | 40%     | 2 minutes            | Dictionary word, lacks numbers/symbols      |
+| `Passw0rd!`           | Medium              | 65%     | 100 years            | Good start, but pattern is known            |
+| `S3cureP@ssw0rd!`     | Strong              | 85%    | 1 billion years      | Good diversity, but can be longer          |
+| `IL0veK@l!L!nuxAndCyberSecurityIn2025!` | Very Strong (Passphrase)| 100%     | Trillions of years | Excellent length and diversity |
+                                
+
+(Repeat rows for each password you tested)
+
+2. Best Practices for Creating Strong Passwords:
+
+* Length is King: Aim for passwords of at least 12-16 characters or more. Passphrases (long sentences with spaces or special characters) are often easier to remember and highly secure.
+* Character Diversity: Use a mix of uppercase letters (A-Z), lowercase letters (a-z), numbers (0-9), and symbols (`!@#$%^&*()_+-=[]{};:'",.<>/?~`).
+* Uniqueness: Never reuse passwords across different accounts. If one service is breached, all other accounts using the same password become vulnerable (Credential Stuffing).
+* Avoid Common Patterns & Personal Info: Do not use dictionary words, sequential numbers (e.g., 12345), keyboard patterns (e.g., `qwerty`), your name, birthdate, or easily guessable information.
+* Randomness: Strive for passwords that appear random. Tools like password generators can help, or use a memorable but complex passphrase.
+* Two-Factor Authentication (2FA/MFA): Where available, always enable 2FA as an additional layer of security. Even if your password is stolen, the attacker still needs your second factor (e.g., a code from your phone).
+* Password Managers: Consider using a reputable password manager (e.g., Bitwarden, LastPass, KeePassXC) to store and generate unique, strong passwords for all your accounts. You only need to remember one strong master password.
+
+3. Tips Learned from the Evaluation:
+
+* Even small changes (like adding a symbol or number) can dramatically increase crack time.
+* Long passphrases are significantly more secure than short, complex passwords and can be easier to remember.
+* Online checkers provide useful immediate feedback on weaknesses.
+* Simply replacing 'a' with '@' or 'i' with '!' isn't enough if the base word is common.
+
+4. Common Password Attacks:
+
+* Brute Force Attack:
+    * Mechanism: An attacker systematically tries every possible combination of characters (e.g., `a`, `b`, `c`, `aa`, `ab`, `ac`, etc.) until the correct password is found. This is like trying every single lock combination.
+    * How Complexity Helps: Each additional character and each additional character type (uppercase, number, symbol) exponentially increases the number of possible combinations, making brute-force attacks computationally infeasible within practical timeframes.
+* Dictionary Attack:
+    * Mechanism: An attacker uses a list of common words, names, previously leaked passwords, and known common permutations (e.g., `password123`, `P@ssw0rd`) to guess passwords.
+    * How Complexity Helps: Passwords that are not found in dictionaries or common lists, and especially those that use unusual character substitutions or are long passphrases, are resilient to dictionary attacks.
+
+5. Summary of How Password Complexity Affects Security:
+
+Password complexity directly correlates with the effort and time required for an attacker to compromise an account. A longer password with a diverse set of characters increases the "entropy" (randomness and unpredictability) of the password. This expanded keyspace makes it incredibly difficult for automated attacks like brute force to guess the correct combination in a reasonable amount of time. While no password is 100% secure, higher complexity, combined with uniqueness and multi-factor authentication, significantly reduces the risk of unauthorized access.
+
